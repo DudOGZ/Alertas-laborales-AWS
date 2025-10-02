@@ -1,0 +1,7 @@
+# CloudWatch Event Rule – Lambda Trigger
+
+**Name:** alertaLaboralTrigger  
+**Schedule expression:** `cron(0 8 ? * 3 *)`  
+**Description:** Executes the Lambda function every Wednesday at 08:00 UTC (10:00 Madrid time)  
+**Target:** Lambda function (`alertaLaboralHandler`)  
+**Purpose:** Weekly check for new job offers based on user-defined keywords
