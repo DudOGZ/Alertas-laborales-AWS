@@ -19,3 +19,29 @@ Sistema de alertas laborales en la nube - Esquema general
 Notas:
 - El sistema está en fase de diseño
 - Se prioriza la discreción técnica en la documentación pública
+
+
+
+### ENGLISH ###
+
+# Cloud-Based Job Alert System – General Overview
+
+## 1. Input
+- List of websites to monitor  
+- Keywords defined by the user
+
+## 2. Process
+- Lambda function runs periodically (CloudWatch)  
+- Analyzes the content of the websites  
+- Filters based on relevant keywords
+
+## 3. Output
+- If matches are found, a notification is sent via email (SES)
+
+## 4. Security
+- IAM manages execution and email-sending permissions  
+- Access to resources is strictly limited
+
+## Notes
+- The system is currently in the design phase  
+- Technical discretion is prioritized in public documentation
