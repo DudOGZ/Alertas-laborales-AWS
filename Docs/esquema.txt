@@ -1,0 +1,21 @@
+Sistema de alertas laborales en la nube - Esquema general
+
+1. Entrada:
+   - Lista de páginas web a monitorizar
+   - Palabras clave definidas por el usuario
+
+2. Proceso:
+   - Función Lambda se ejecuta periódicamente (CloudWatch)
+   - Analiza el contenido de las páginas
+   - Filtra por palabras clave relevantes
+
+3. Salida:
+   - Si hay coincidencias, se envía una notificación por correo (SES)
+
+4. Seguridad:
+   - IAM controla los permisos de ejecución y envío
+   - Se limita el acceso a los recursos necesarios
+
+Notas:
+- El sistema está en fase de diseño
+- Se prioriza la discreción técnica en la documentación pública
