@@ -46,6 +46,49 @@ It is being developed using **Amazon Web Services (AWS)**, with a focus on autom
 - Explore cloud service integration to automate useful tasks  
 - Practice security and efficiency best practices in AWS environments
 
+
+---
+
+## 🔗 Documentación por módulo / Module documentation
+
+- [Lambda](lambda/README.md) – Lógica de ejecución y filtrado  
+- [SES](ses/README.md) – Configuración del servicio de correo  
+- [IAM](iam/README.md) – Permisos mínimos para Lambda  
+- [CloudWatch](cloudwatch/README.md) – Programación automática con eventos
+
+---
+
+## 📌 Estado actual / Current status
+
+- [x] Estructura del repositorio  
+- [x] Función Lambda básica (`main.py`)  
+- [x] Política IAM mínima (`policy.json`)  
+- [x] Configuración de trigger (`trigger-config.txt`)  
+- [x] Documentación bilingüe por módulo  
+- [ ] Validación de remitente en SES  
+- [ ] Pruebas con páginas reales  
+- [ ] Mejora del filtrado por contenido
+
+---
+
+## 🚀 Cómo desplegar / How to deploy
+
+1. Verifica que el remitente esté validado en SES  
+2. Asocia la política IAM al rol de Lambda  
+3. Configura el trigger en CloudWatch con `trigger-config.txt`  
+4. Sube el código a Lambda y prueba manualmente o espera ejecución automática
+
+---
+
+## 📎 Enlaces útiles / Useful links
+
+- [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
+- [Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/send-email.html)  
+- [CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html)  
+- [IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+
+  
+
 ### Author
 
 **Enrique P.**  
