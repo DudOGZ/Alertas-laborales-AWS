@@ -78,6 +78,13 @@ It is being developed using **Amazon Web Services (AWS)**, with a focus on autom
 3. Configura el trigger en CloudWatch con `trigger-config.txt`  
 4. Sube el código a Lambda y prueba manualmente o espera ejecución automática
 
+
+1. Verify that the sender is validated in SES  
+2. Attach the IAM policy to the Lambda role  
+3. Configure the CloudWatch trigger using `trigger-config.txt`  
+4. Upload the code to Lambda and test manually or wait for automatic execution
+
+
 ---
 
 ## 📎 Enlaces útiles / Useful links
@@ -87,10 +94,4 @@ It is being developed using **Amazon Web Services (AWS)**, with a focus on autom
 - [CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html)  
 - [IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 
-  
 
-### Author
-
-**Enrique P.**  
-Student of Networked Computer Systems Administration (ASIR)  
-San Fernando de Henares, Madrid, Spain
